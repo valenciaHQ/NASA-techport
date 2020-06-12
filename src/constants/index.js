@@ -15,4 +15,4 @@ export const DISMISS_PROJECT = "DISMISS_PROJECT";
 export const SET_READED = "SET_READED";
 export const NEXT_PAGE = "NEXT_PAGE";
 export const PREV_PAGE = "PREV_PAGE";
-export const PAGE_LIMIT = 2;
+export const PAGE_LIMIT = 25;
