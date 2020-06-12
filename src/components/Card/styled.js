@@ -90,7 +90,7 @@ export const Close = styled.div`
   }
 `;
 
-export const Loading = styled.div`
+export const LoadingWrapper = styled.div`
   display: flex;
   flex: 1;
   justify-content: center;

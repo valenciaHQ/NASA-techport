@@ -60,7 +60,6 @@ export const getDetails = (id) => async (dispatch) => {
       });
     }
   } catch (err) {
-    debugger;
     return dispatch({ type: FETCH_PROJECTS_ERROR, payload: err });
   }
 };

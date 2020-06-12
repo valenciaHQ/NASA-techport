@@ -22,7 +22,6 @@ const initialState = {
 };
 
 const projects = (state = initialState, action) => {
-  console.log("ACTION: ", action);
   switch (action.type) {
     case FETCH_PROJECTS_REQUEST:
       return {

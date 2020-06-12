@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { PAGE_LIMIT } from "../../constants";
 import Card from "../Card";
 import styled from "styled-components";
+import Loading from "../Loading";
 
 const Container = styled.div`
   display: grid;
@@ -18,7 +19,11 @@ export default () => {
   data = data.slice(currentPage, currentPage + PAGE_LIMIT);
 
   if (isLoading) {
-    return <div>Loading</div>;
+    return (
+      <div>
+        <Loading />
+      </div>
+    );
   }
 
   return (

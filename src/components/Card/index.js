@@ -8,10 +8,16 @@ import Footer from "./Footer";
 import ExpandedContent from "./ExpandedContent";
 import { ArrowUp, ArrowDown } from "../Icons";
 
-import { Container, ExpandWrapper, TextContainer, Loading } from "./styled";
+import {
+  Container,
+  ExpandWrapper,
+  TextContainer,
+  LoadingWrapper,
+} from "./styled";
 import { DISMISS_PROJECT } from "../../constants";
 
 import { getDetails } from "../../actions/projects";
+import Loading from "../Loading";
 
 const Card = ({ id }) => {
   const [expanded, setExpanded] = useState(false);
@@ -45,7 +51,9 @@ const Card = ({ id }) => {
   if (loading) {
     return (
       <Container>
-        <Loading>Loading</Loading>
+        <LoadingWrapper>
+          <Loading />
+        </LoadingWrapper>
       </Container>
     );
   }
